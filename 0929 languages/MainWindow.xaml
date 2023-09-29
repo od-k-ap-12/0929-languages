@@ -1,0 +1,29 @@
+﻿<Window x:Class="_0929_languages.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_0929_languages"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <WrapPanel Background="Azure" VerticalAlignment="Center" Grid.Row="0">
+            <Button Background="AliceBlue" FontSize="15" Name="buttonFile" Margin="10" Padding="10" Content="File"/>
+            <Button Background="AliceBlue" FontSize="15" Name="buttonEdit" Margin="10" Padding="10" Content="Edit"/>
+            <Button Background="AliceBlue" FontSize="15" Name="buttonView" Margin="10" Padding="10" Content="Project"/>
+            <Button Background="AliceBlue" FontSize="15" Name="buttonProject" Margin="10" Padding="10" Content="Project"/>
+            <Button Background="AliceBlue" FontSize="15" Name="buttonBuild" Margin="10" Padding="10" Content="Build"/>
+        </WrapPanel>
+        <WrapPanel Background="Azure" Grid.Row="1" VerticalAlignment="Top">
+            <Button Background="AliceBlue" FontSize="15" Name="buttonChangeLanguage" Margin="10" Padding="10" Content="Change Language"/>
+        </WrapPanel>
+        <Label Content="Задание незакончено" FontSize="20" HorizontalAlignment="Left" Margin="262,0,0,0" Grid.Row="2" VerticalAlignment="Center"/>
+    </Grid>
+</Window>
