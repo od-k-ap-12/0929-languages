@@ -12,8 +12,6 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-
-
         <WrapPanel Background="Azure" VerticalAlignment="Center" Grid.Row="0">
             <Button Background="AliceBlue" FontSize="15" Name="buttonFile" Margin="10" Padding="10" Content="File"/>
             <Button Background="AliceBlue" FontSize="15" Name="buttonEdit" Margin="10" Padding="10" Content="Edit"/>
