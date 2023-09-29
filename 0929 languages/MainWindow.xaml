@@ -17,13 +17,15 @@
         <WrapPanel Background="Azure" VerticalAlignment="Center" Grid.Row="0">
             <Button Background="AliceBlue" FontSize="15" Name="buttonFile" Margin="10" Padding="10" Content="File"/>
             <Button Background="AliceBlue" FontSize="15" Name="buttonEdit" Margin="10" Padding="10" Content="Edit"/>
-            <Button Background="AliceBlue" FontSize="15" Name="buttonView" Margin="10" Padding="10" Content="Project"/>
+            <Button Background="AliceBlue" FontSize="15" Name="buttonView" Margin="10" Padding="10" Content="View"/>
             <Button Background="AliceBlue" FontSize="15" Name="buttonProject" Margin="10" Padding="10" Content="Project"/>
             <Button Background="AliceBlue" FontSize="15" Name="buttonBuild" Margin="10" Padding="10" Content="Build"/>
         </WrapPanel>
         <WrapPanel Background="Azure" Grid.Row="1" VerticalAlignment="Top">
-            <Button Background="AliceBlue" FontSize="15" Name="buttonChangeLanguage" Margin="10" Padding="10" Content="Change Language"/>
+            <Button Background="AliceBlue" FontSize="15" Name="buttonChangeLanguage" Margin="10" Padding="10" Click="buttonChangeLanguage_Click">
+                <Image Name="language" Source="/images/usa.png"/>
+            </Button>
         </WrapPanel>
-        <Label Content="Задание незакончено" FontSize="20" HorizontalAlignment="Left" Margin="262,0,0,0" Grid.Row="2" VerticalAlignment="Center"/>
+
     </Grid>
 </Window>

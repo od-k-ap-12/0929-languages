@@ -24,5 +24,30 @@ namespace _0929_languages
         {
             InitializeComponent();
         }
+        string lang_mode = "eng";
+
+        private void buttonChangeLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            if(lang_mode == "eng")
+            {
+                buttonFile.Content = "Файл";
+                buttonEdit.Content = "Редагувати";
+                buttonProject.Content = "Проект";
+                buttonView.Content = "Вид";
+                buttonBuild.Content = "Збірка";
+                lang_mode = "ukr";
+                language.Source = new BitmapImage(new Uri("/images/ukraine.png", UriKind.Relative));
+            }
+            else if (lang_mode == "ukr")
+            {
+                buttonFile.Content = "File";
+                buttonEdit.Content = "Edit";
+                buttonProject.Content = "Project";
+                buttonView.Content = "View";
+                buttonBuild.Content = "Build";
+                lang_mode = "eng";
+                language.Source = new BitmapImage(new Uri("/images/usa.png", UriKind.Relative));
+            }
+        }
     }
 }
